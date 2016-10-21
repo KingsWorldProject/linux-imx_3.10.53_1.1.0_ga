@@ -4,4 +4,5 @@ make -j32 LOADADDR=0x10008000 uImage
 make imx6q-novasom.dtb
 make imx6q-GDS-novasom.dtb
 make imx6qdl-novasom7B.dtb
+make imx6q-novasomP.dtb
 
