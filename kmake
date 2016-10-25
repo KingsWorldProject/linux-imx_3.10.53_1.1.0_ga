@@ -1,4 +1,5 @@
 #!/bin/sh
+. ../../Utils/SourceMe_4.9.3
 make -j32 LOADADDR=0x10008000 uImage 
 #make modules
 make imx6q-novasom.dtb
