@@ -20,8 +20,10 @@
 #include "imx6q.dtsi"
 
 #include "imx6q-novasomP.dtsi"
+//#include "imx6qdl-novasom.dtsi"
+
 / {
-        model = "Freescale i.MX6 Quad NOVAsomP Board";
+        model = "Freescale i.MX6 Solo/DualLite NOVAsomP Board";
         compatible = "fsl,imx6q-novasomP", "fsl,imx6q", "fsl,imx6qdl-sabreauto";
 };
 
