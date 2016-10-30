@@ -4,7 +4,7 @@ Summary:
 ========
 
 This directory contains the source code for linux 3.10.53_1.1.0_ga for NOVAsom boards,
-mainly used in the NOVAsom_SDK 1.0.4 Novasom Industries project
+mainly used in the NOVAsom_SDK 1.0.4 Novasom Industries project for external file systems
 
 ## Prerequisities
 A running Ubuntu 16.04 or an equivalent virtual machine
