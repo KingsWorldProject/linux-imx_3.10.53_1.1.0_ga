@@ -11,16 +11,13 @@
  * http://www.opensource.org/licenses/gpl-license.html
  * http://www.gnu.org/copyleft/gpl.html
  * 
- * #include "imx6q-novasomP.dtsi"
  */
 
 /dts-v1/;
 
 #include <dt-bindings/interrupt-controller/irq.h>
-#include "imx6q.dtsi"
-
-#include "imx6q-novasomP.dtsi"
-//#include "imx6qdl-novasom.dtsi"
+#include "imx6dl.dtsi"
+#include "imx6qdl-novasom.dtsi"
 
 / {
         model = "Freescale i.MX6 Solo/DualLite NOVAsomP Board";

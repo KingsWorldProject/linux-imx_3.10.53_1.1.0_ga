@@ -1,0 +1,8 @@
+#!/bin/sh
+. ../../Utils/SourceMe_4.9.3
+make imx6q-novasom.dtb
+make imx6q-GDS-novasom.dtb
+make imx6qdl-novasom7B.dtb
+make imx6q-novasomP.dtb
+make imx6sdl-novasomP.dtb
+
