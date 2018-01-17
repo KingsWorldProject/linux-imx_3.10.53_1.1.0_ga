@@ -17,7 +17,8 @@
 
 #include <dt-bindings/interrupt-controller/irq.h>
 #include "imx6dl.dtsi"
-#include "imx6qdl-novasom.dtsi"
+/* #include "imx6qdl-novasom.dtsi" */
+#include "imx6sdl-novasomP.dtsi"
 
 / {
         model = "Freescale i.MX6 Solo/DualLite NOVAsomP Board";

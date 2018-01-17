@@ -473,49 +473,52 @@ PAD_CTL_SRE_SLOW                (0 << 0)
 };
 &ldb {
 	status = "okay";
+        status = "okay";
+        lvds-channel@0 {
+                fsl,data-mapping = "jeida";
+                fsl,data-width = <24>;
+                primary;
+                status = "okay";
+                crtc = "ipu1-di0";
+                display-timings {
+                        native-mode = <&timing1_1366x768>;
+                        timing1_1366x768: LVDS-1366x768 {
+                                clock-frequency = <63900000>;
+                                hactive = <1366>;
+                                vactive = <768>;
+                                hback-porch = <50>;
+                                hfront-porch = <50>;
+                                vback-porch = <10>;
+                                vfront-porch = <10>;
+                                hsync-len = <40>;
+                                vsync-len = <5>;
 
-	lvds-channel@0 {
-		fsl,data-mapping = "spwg";
-		fsl,data-width = <18>;
-		primary;
-		status = "okay";
+                        };
+                };
+        };
+        lvds-channel@1 {
+                fsl,data-mapping = "jeida";
+                fsl,data-width = <24>;
+                primary;
+                status = "okay";
+                crtc = "ipu1-di0";
+                display-timings {
+                        native-mode = <&timing2_1366x768>;
+                        timing2_1366x768: LVDS-1366x768 {
+                                clock-frequency = <63900000>;
+                                hactive = <1366>;
+                                vactive = <768>;
+                                hback-porch = <50>;
+                                hfront-porch = <50>;
+                                vback-porch = <10>;
+                                vfront-porch = <10>;
+                                hsync-len = <40>;
+                                vsync-len = <5>;
 
-		display-timings {
-			native-mode = <&timing0>;
-			timing0: hsd100pxn1 {
-				clock-frequency = <65000000>;
-				hactive = <1024>;
-				vactive = <768>;
-				hback-porch = <220>;
-				hfront-porch = <40>;
-				vback-porch = <21>;
-				vfront-porch = <7>;
-				hsync-len = <60>;
-				vsync-len = <10>;
-			};
-		};
-	};
+                        };
+                };
+        };
 
-	lvds-channel@1 {
-		fsl,data-mapping = "spwg";
-		fsl,data-width = <18>;
-		status = "okay";
-
-		display-timings {
-			native-mode = <&timing1>;
-			timing1: hsd100pxn1 {
-				clock-frequency = <65000000>;
-				hactive = <1024>;
-				vactive = <768>;
-				hback-porch = <220>;
-				hfront-porch = <40>;
-				vback-porch = <21>;
-				vfront-porch = <7>;
-				hsync-len = <60>;
-				vsync-len = <10>;
-			};
-		};
-	};
 };
 &pcie {
         pinctrl-names = "default";
